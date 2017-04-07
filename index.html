@@ -21,10 +21,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
-    body {
-        background-color: #f4f7fb;
-    }
-    
     h1,
     h2,
     h3,
@@ -40,20 +36,9 @@
     }
     /*header background*/
     
-    .header {
-        display: table;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        /*background: url("img/wh/wh - 8.jpg") no-repeat center center scroll;*/
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-    }
-    
     .prototypes {
-        padding: 50px 0;
+        background-color: #f4f7fb;
+        padding-top: 50px;
     }
     
     .prototypes h2 {
@@ -144,10 +129,8 @@
     }
     
     .jumbotron {
-        background-size: cover;
-        background-color: inherit;
-        background-attachment: fixed;
         margin-bottom: 0px;
+        background-color: transparent;
     }
     
     .info-box {
@@ -191,10 +174,7 @@
     .info-dark a {
         color: white;
     }
-    
-    .kl-nav {
-        background-color: inherit;
-    }
+
     
     .info-section {
         margin-bottom: 30px;
@@ -212,7 +192,6 @@
         margin-bottom: 20px;
     }
 */
-    
     @media (max-width:425px) {
         .landing p,
         .landing h1,
@@ -242,19 +221,42 @@
         background-color: #333;
         color: white;
     }
+
+
+    #float-background {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: -9999;
+        background-position: center;
+        background-size: cover;
+        background-image: url("img/wh/wh - 2.jpg");
+        background-attachment: fixed;
+    }
+
+    .default-background {
+        background-color: #f4f7fb;
+    }
+    
+    .kl-nav {
+        margin-bottom:0px;
+    }
+
     </style>
 </head>
 
 <body>
+    <div id='float-background'></div>
     <!-- Navigation -->
-    <nav class="navbar navbar-default kl-nav">
+    <nav class="navbar navbar-default kl-nav default-background">
         <div class="container">
             <p class="navbar-text">Natural World Heritage Knowledge Lab</p>
             <!-- <a class="navbar-brand" href="#">Natural World Heritage Knowledge Lab</a> -->
         </div>
     </nav>
     <!-- Header -->
-    <header>
+    <header class='default-background'>
         <div class="container landing">
             <h1><strong>Amplify</strong> <br/> the impact of knowledge</h1>
             <p>Delivering natural World Heritage digital products through the web</p>
@@ -262,7 +264,7 @@
     </header>
     <!-- about -->
     <section id='about'>
-        <div class="jumbotron img-landcover">
+        <div class="jumbotron">
             <div class="container">
                 <div class='row'>
                     <div class='col-md-6 info-box info-right info-dark'>
@@ -274,7 +276,7 @@
                 </div>
             </div>
         </div>
-        <div class="jumbotron">
+        <div class="jumbotron default-background">
             <div class="container">
                 <div class='row'>
                     <div class='col-md-12 info-box info-left'>
@@ -286,7 +288,7 @@
                 </div>
             </div>
         </div>
-        <div class="jumbotron img-datasheet">
+        <div class="jumbotron">
             <div class="container">
                 <div class='row'>
                     <div class='col-md-6 info-box info-dark info-right'>
@@ -382,7 +384,7 @@
         </div>
     </section>
     <!-- Footer -->
-    <section id='contact'>
+    <section id='contact' class='default-background'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 info-section">
@@ -421,58 +423,6 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Custom Theme JavaScript -->
-    <script>
-    // // Closes the sidebar menu
-    // $("#menu-close").click(function(e) {
-    //     e.preventDefault();
-    //     $("#sidebar-wrapper").toggleClass("active");
-    // });
-    // // Opens the sidebar menu
-    // $("#menu-toggle").click(function(e) {
-    //     e.preventDefault();
-    //     $("#sidebar-wrapper").toggleClass("active");
-    // });
-    // // Scrolls to the selected menu item on the page
-    // $(function() {
-    //     $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-    //         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-    //             var target = $(this.hash);
-    //             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    //             if (target.length) {
-    //                 $('html,body').animate({
-    //                     scrollTop: target.offset().top
-    //                 }, 1000);
-    //                 return false;
-    //             }
-    //         }
-    //     });
-    // });
-    // //#to-top button appears after scrolling
-    // var fixed = false;
-    // $(document).scroll(function() {
-    //     if ($(this).scrollTop() > 250) {
-    //         if (!fixed) {
-    //             fixed = true;
-    //             // $('#to-top').css({position:'fixed', display:'block'});
-    //             $('#to-top').show("slow", function() {
-    //                 $('#to-top').css({
-    //                     position: 'fixed',
-    //                     display: 'block'
-    //                 });
-    //             });
-    //         }
-    //     } else {
-    //         if (fixed) {
-    //             fixed = false;
-    //             $('#to-top').hide("slow", function() {
-    //                 $('#to-top').css({
-    //                     display: 'none'
-    //                 });
-    //             });
-    //         }
-    //     }
-    // });
-    </script>
 </body>
 
 </html>
