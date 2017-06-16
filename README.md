@@ -6,11 +6,11 @@
 - [Land Cover Change](#1-land-cover-change)
 - [Forest loss and Human footprint](#2-forest-loss-and-human-footprint)
 - [Species Climate change vulnerability](#3-climate-change-and-species-vulnerability)
-- [Near real time Landsat 8 imagery](#4-Near-real-time-Landsat-8-imagery)
-- [World Heritage boundary](#5-World-Heritage-Boundary)
-- [Global spatial comparative analysis](#6-Global-spatial-comparative-analysis)
-- [World Heritage information sheet](#7-World-Heritage-information-sheet)
-- [Global surface water transition](#8-Global-surface-water-transition-on-Google-Earth-Engine)
+- [Near real time Landsat 8 imagery](#4-near-real-time-landsat-8-imagery)
+- [World Heritage boundary](#5-world-heritage-boundary)
+- [Global spatial comparative analysis](#6-global-spatial-comparative-analysis)
+- [World Heritage information sheet](#7-world-heritage-information-sheet)
+- [Global surface water transition](#8-global-surface-water-transition-on-google-earth-engine)
 
 ## About
 
