@@ -6,11 +6,11 @@
 - [Land Cover Change](#1-land-cover-change)
 - [Forest loss and Human footprint](#2-forest-loss-and-human-footprint)
 - [Species Climate change vulnerability](#3-climate-change-and-species-vulnerability)
-- [Near real time Landsat 8 imagery](#4.-Near-real-time-Landsat-8-imagery)
-- [World Heritage boundary](#5.-World-Heritage-Boundary)
-- [Global spatial comparative analysis](#6.-Global-spatial-comparative-analysis-(prototype-version))
-- [World Heritage information sheet](#7.-World-Heritage-information-sheet-/-WCMC-datasheet)
-- [Global surface water transition](#8.-Global-surface-water-transition-on-Google-Earth-Engine)
+- [Near real time Landsat 8 imagery](#4-Near-real-time-Landsat-8-imagery)
+- [World Heritage boundary](#5-World-Heritage-Boundary)
+- [Global spatial comparative analysis](#6-Global-spatial-comparative-analysis)
+- [World Heritage information sheet](#7-World-Heritage-information-sheet)
+- [Global surface water transition](#8-Global-surface-water-transition-on-Google-Earth-Engine)
 
 ## About
 
@@ -141,7 +141,7 @@ Please see below for various links to the boundary (no commercial use and no re-
 
 [Natural World Heritage Viewer](http://wcmc.io/3f3e) | [esri Feature Service](http://www.arcgis.com/home/item.html?id=d40e5b2b9be843ddb03eefb04c173ca4) | [REST end point](http://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/Latest_WH/FeatureServer)
 
-## 6. Global spatial comparative analysis (prototype version)
+## 6. Global spatial comparative analysis
 
 ### Innovation
 
@@ -151,7 +151,7 @@ Please see below for various links to the boundary (no commercial use and no re-
 
 [Comparative analysis](http://whca.yichuans.me/) | [Source on Github](https://github.com/Yichuans/comparative-analysis-online)
 
-## 7. World Heritage information sheet / WCMC datasheet
+## 7. World Heritage information sheet
 
 ### Innovation
 
