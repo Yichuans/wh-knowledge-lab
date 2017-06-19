@@ -103,9 +103,9 @@ By summing the number of climate change vulnerable species by their Sensitivity,
 
 ### Innovation
 
-The first application built on external web services (esri's Image Services). This is a significant step forward: by doing so, we free ourselves from the laborious, difficult, expensive, and non essential tasks of tracking Landsat 8 imagery as they become available, downloading and processing images, and uploading them to a web based portal for viewing. This results in an end product which can then focus on presenting Landsat 8 images, in near real time, for natural World Heritage that self updates and requires no maintenance and little computation power.
+This is the first time that remote sensing images (Landsat 8) are 'collated', and displayed interactively for all natural World Heritage sites at near real time.
 
-This is the also the first time that remote sensing images (Landsat 8) are collated for all natural World Heritage sites at near real time.
+Additionally, the first application built on external web services (esri's Image Services). This is a significant step forward: by doing so, we free ourselves from the laborious, difficult, expensive, and non essential tasks of tracking Landsat 8 imagery as they become available, downloading and processing images, and uploading them to a web based portal for viewing. This results in an end product which can then focus on presenting Landsat 8 images, in near real time, for natural World Heritage that self updates and requires no maintenance and little computation power.
 
 ### About
 
@@ -115,7 +115,7 @@ As a proof of concept, time series Landsat 8 images are now displayed in juxtapo
 
 The benefits of rear real time satellite images are multitude. An obvious one is the possibility of 'seeing' World Heritage sites from space, back in time and also present, some of which remain inaccessible due to their remote location and hugely vast size. This could help experts with significant experience on the ground to scale up their knowledge and apply across the site. It also enables large scale analysis, previously unavailable or expensive, to generate new insights, for example, in identifying possible threats such as long term land cover conversion trend, or in detecting disturbances such as fire. 
 
-It is worth noting that, despite their vast potential, they do not replace the need for ground based surveys and monitoring missions established in statutory process, due to limitations such as resolution and the subsequent difficulty of high fidelity analysis. Like land cover change, it may be possible in the future to eventually detect every change in pin-point accuracy, however, it will not explain the reason why in itself.
+It is worth noting that, despite their vast potential, they do not replace the need for ground based surveys and monitoring missions well established in statutory process, due to limitations such as resolution and the subsequent difficulty of high fidelity analysis. Like land cover change, it may be possible in the future to eventually detect every change in pin-point accuracy, however, it will not explain the reason why by itself alone.
 
 - Result: Using time series data for WH with near-real time monitoring, in a more accessible and timely way.
 - Issue: relies on external Landsat services, currently for views only and very limited analytical function, for example dynamic band combination.
@@ -135,7 +135,7 @@ The natural World Heritage boundary evolved from a KML file with patchy point an
 
 Spatially explicit boundary is a fundamental requirement when it comes to protected area evaluation and effective monitoring, especially in the context of natural World Heritage Convention. The Outstanding Universal Values, which underpin the World Heritage status, requires a well defined geographical boundary, without which no assessment could be made on value justification, protection and management nor integrity requirements. A comprehensive and accurate database of these boundaries allows scientifically robust scrutiny of the distribution of natural sites, their comparative representation and irreplaceability, crucially important for the credibility of the Convention. Unfortunately the Convention does not require the submission of GIS data as a requirement for the nomination, albeit the technology has been unanimously adopted and widely used.
 
-In term of monitoring and policy guidance, most large extractive companies have pledged that no active operation nor exploration should take place within natural World Heritage sites. Having a GIS boundary facilitate that understanding and leaves no room for ambiguity. World Heritage boundaries have supported many scientific and research initiatives, including [the World Heritage Outlook](http://www.worldheritageoutlook.iucn.org), [thematic studies](https://www.iucn.org/theme/world-heritage/resources/publications), and [World Heritage and benefits](https://www.iucn.org/theme/world-heritage/our-work/world-heritage-projects/benefits-natural-world-heritage), to name a few.
+In term of monitoring and policy guidance, most large extractive companies have pledged that no active operation nor exploration should take place within natural World Heritage sites. Having a GIS boundary facilitate that understanding and leaves no room for ambiguity. World Heritage boundaries have supported many scientific and research initiatives, including the [World Heritage Outlook](http://www.worldheritageoutlook.iucn.org), [Thematic Studies](https://www.iucn.org/theme/world-heritage/resources/publications), and [World Heritage and benefits](https://www.iucn.org/theme/world-heritage/our-work/world-heritage-projects/benefits-natural-world-heritage), to name a few.
 
 Please see below for various links to the boundary (no commercial use and no re-distribution).
 
@@ -145,9 +145,15 @@ Please see below for various links to the boundary (no commercial use and no re-
 
 ### Innovation
 
+The first attempt to replicate a well established analysis online, with the aim of enabling those who wish to undertake an analysis themselves. This web based prototype application is based on an open source GIS.
 
 ### About
 
+The spatial comparative analysis online prototype is a proof-of-concept online web application that provides a first screening of comparable sites and identifies broad scale gaps, according to datasets of widely agreed global biogeographical classifications and biodiversity conservation priorities. The tool will enable any interested parties to carry out an initial evaluation of their proposed biodiversity site on their own. It empowers non specialists so that they understand the logical comparison framework and have the tools to test their own draft nominations, and it is our hope that by doing so, it potentially reduces the risk of unsuitable sites being submitted and saves valuable resources. At the moment, this proof of concept product only allows the comparison of samples of global biogeography, broad conservation priorities, and important sites that are of great biodiversity values
+
+- Result: a prototype proof-of-concept application that replicates the desktop version of global comparative analysis, for biodiversity nominations at UNEP-WCMC. 
+- Issue: only three example datasets are included and that no proper spatial analysis is undertaken.
+- Tech stack: postgres, postgis, leaflet, bootstrap
 
 [Comparative analysis](http://whca.yichuans.me/) | [Source on Github](https://github.com/Yichuans/comparative-analysis-online)
 
@@ -155,8 +161,17 @@ Please see below for various links to the boundary (no commercial use and no re-
 
 ### Innovation
 
+This initiative represents a major overhaul to modernise World Heritage information sheet, by making them easily accessible online. It uses a web standard format markdown, converted from Word.
 
 ### About
+
+The relevance and use of World Heritage information sheets have fallen out of favour, yet the content is a surviving snapshot of the site at the time of inscription and/or latest modification (such as major boundary change or changes introduced by re-nominations). Despite years of discussion about scrapping it for good, on the contrary, significant use cases have emerged with a strong support to make them more useful
+
+The value is obvious and widely acknowledged. They provide a concise, consistent record of relevant synthesised information since the birth of the Convention and are used in a variety of ways, for examples in the global comparative analysis, quick references by interested parties, and even World Heritage Outlook assessments. Despite this, these datasheets have been in an awkward position as alternative sources of information are increasingly available in a digital form and accessible via the UNESCO World Heritage Centre website. Avoiding the contentious topic of updates and maintenance, which has been made clear that it demands a proper debate on its usefulness and subsequently funding, the focus should be on how such records could be made easily accessible. The web and in particular via mobile devices is the most popular approach.
+
+- Result: a web based interface for viewing information sheets. 
+- Issue: waiting user feedbacks and deployment
+- Tech stack: Pelican, Bootstrap, Pandoc (for conversion), python re library
 
 [Information sheet](https://yichuans.github.io/datasheet/output/) | [Source on Github](https://github.com/Yichuans/datasheet)
 
@@ -164,5 +179,20 @@ Please see below for various links to the boundary (no commercial use and no re-
 
 ### Innovation
 
+A test of analysing surface water transition - utilising the power of Google's geospatial computing platform - Google Earth Engine. All calculation is only done at the time of request (when you visit the site).
 
 ### About
+
+The power of [Google Earth Engine](https://earthengine.google.com) has seen several high impact papers, including global forest loss and global surface water, highlighting the possibility of its use in the conservation community, at the planetary scale. 
+
+This offers exciting opportunities for natural World Heritage. Although our scope is global, with limited resources, we are unable to undertake any any primary research, i.e., any research that is based on original raw data (for example, satellite imagery) for each and every site. What we have done so far, is to make use of analyses that have been carried out by research institute and offer a picture specific to World Heritage sites. The main obstacle is the global nature of these sites - it is possible to do case studies for some but to applying the same methodology across vastly different geography across the globe will quickly outrun our capacity to deliver.
+
+This is where Google Earth Engine shines - the ability to scale up without compromise and with considerably less resources.
+
+In our test analysis, we looked at the transition of surface water, which is one of the many datasets of the [Global Surface Water](https://global-surface-water.appspot.com), for every natural World Heritage site,  documenting changes in water state between the first year and the last year of observation.
+
+[Global surface water](https://yichuans413.appspot.com) | [Source on Github](https://github.com/Yichuans/gee-surface-water)
+
+- Result: a mock up web based interface for showing the capability of GEE
+- Issue: first draft
+- Tech stack: Google Earth Engine, Google App Engine
